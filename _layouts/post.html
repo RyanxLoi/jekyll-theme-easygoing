@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+  <div class="post-container container mt-4">
+   
+        <h1 class="post-title">{{ page.title }}</h1>
+        <time>{{ page.date | date: "%-d %B %Y" }} </time>
+    
+        <img class="post-image" alt="{{ page.image_alt_text }}" src="{{ page.image }}" />
+
+{{ content }}
+
+</div>
+
+
+
+
+
+
+

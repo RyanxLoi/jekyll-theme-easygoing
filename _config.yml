@@ -1,0 +1,23 @@
+title: "Vertical"
+subtitle: "Welcome to my blog"
+
+footer: "Copyright: Ryan Loi"
+
+navigation:
+  - title: "Home"
+    url: "/"
+
+  - title: "Posts"
+    url: "/posts"
+
+  - title: "About"
+    url: "/about"
+
+permalink: /:title
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 2
+paginate_path: "/posts/:num"
