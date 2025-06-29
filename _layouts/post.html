@@ -15,28 +15,7 @@ layout: default
 
 
 </div>
-<div class="post-container container mt-4 mb-5">
-  <h2>Comments</h2>
-  <div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="cade42ae-d43b-45de-b955-0b9e7020e3f4"
-  data-page-id="{{ PAGE_ID }}"
-  data-page-url="{{ PAGE_URL }}"
-  data-page-title="{{ PAGE_TITLE }}"
-></div>
-</div>
 
 
-
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-
-<script type="text/javascript">
-  window.addEventListener('load', function () {
-            setTimeout(() => {
-                let scrollHeight = document.querySelector("#cusdis_thread iframe").contentWindow.document.body.scrollHeight;
-                document.querySelector("#cusdis_thread iframe").style.height = scrollHeight + "px";
-            }, 3000);
-        });
-</script> 
 
 

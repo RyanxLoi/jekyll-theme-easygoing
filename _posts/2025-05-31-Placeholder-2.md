@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Example post 1"
-image: https://browsingthroughlife.com/content/images/size/w2000/2025/06/WP-vs-Ghost-vs-Jekyll-1-.png
+image: /assets/Capybara_2.jpg
 image_alt_text: "Thumbnail"
 ---
 

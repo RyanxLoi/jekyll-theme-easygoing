@@ -217,6 +217,11 @@ p {
     text-decoration: underline;
 }
 
+.related-post-title{
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
 .title {
     text-align: center;
 }

@@ -9,7 +9,7 @@ layout: page
     <div class="col-lg-9 col-md-8 order-2 order-sm-2 order-md-1"><a class="post-link" href={{ post.url }}><h3>{{ post.title }}</h3></a> 
     {{ post.date | date: "%-d %B %Y" }} <br />
 {{ post.excerpt | truncate: 240 }}</div>
-    <div class="col-lg-3 col-md-4 order-1 order-sm-1 order-md-2 post-thumbnail-container"><a href={{ post.url }}><img class="post-thumbnail" src={{ post.image }} /></a></div>
+    <div class="col-lg-3 col-md-4 order-1 order-sm-1 order-md-2 post-thumbnail-container"><a href="{{ post.url }}"><img class="post-thumbnail" src="{{ post.image }}" alt="thumbnail of {{ post.title }}"/></a></div>
   </div>
 {% endfor %}
 

@@ -2,7 +2,15 @@ title: "Easygoing"
 subtitle: "Welcome to my blog"
 description: "Blog description goes here"
 
+exclude:
+  - _compress_images_cache.yml
+
 footer: "Copyright: Ryan Loi"
+
+imageoptim:
+  pngout: false
+  svgo: false
+  verbose: false
 
 navigation:
   - title: "Home"
@@ -19,6 +27,8 @@ permalink: /:title
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-compress-images
+  - jekyll-sitemap
 
-paginate: 2
+paginate: 10
 paginate_path: "/posts/:num"
