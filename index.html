@@ -14,16 +14,17 @@ layout: default
     </div>
 </div>
 
-<!--- Current latest posts-->
 
-<div class="container latest-posts-container mt-4 mb-4">
+
+<!--- Current latest posts -->
+<div class="container mt-4 mb-4">
   <h2 class="latest-posts-title">Latest Posts</h2>
-{% for post in site.posts limit: 3 %}
+{% for post in site.posts %}
   <div class="row latest-post-row mt-4">
-    <div class="col-lg-9 col-md-8 order-2 order-sm-2 order-md-1"><a class="post-link" href={{ post.url }}><h3>{{ post.title }}</h3></a> 
+    <div class="col-lg-9 col-md-8 order-2 order-sm-2 order-md-1"><a class="post-link" href="{{ post.url }}"><h3>{{ post.title }}</h3></a> 
     {{ post.date | date: "%-d %B %Y" }} <br />
 {{ post.excerpt | truncate: 240 }}</div>
-    <div class="col-lg-3 col-md-4 order-1 order-sm-1 order-md-2 post-thumbnail-container"><a href={{ post.url }}><img class="post-thumbnail" src={{ post.image }} /></a></div>
+    <div class="col-lg-3 col-md-4 order-1 order-sm-1 order-md-2 post-thumbnail-container"><a href="{{ post.url }}"><img class="post-thumbnail" src="{{ post.image }}" /></a></div>
   </div>
 {% endfor %}
 

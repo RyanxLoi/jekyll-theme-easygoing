@@ -2,8 +2,8 @@
 layout: page
 ---
 
-<div class="container latest-posts-container mt-4 mb-4">
-  <h2 class="latest-posts-title">Latest Posts</h2>
+<div class="mt-4 mb-4">
+  <h2 class="latest-posts-title">Latest Posts — Page {{ paginator.page }}</h2>
 {% for post in paginator.posts %}
   <div class="row latest-post-row mt-4">
     <div class="col-lg-9 col-md-8 order-2 order-sm-2 order-md-1"><a class="post-link" href={{ post.url }}><h3>{{ post.title }}</h3></a> 
@@ -13,21 +13,20 @@ layout: page
   </div>
 {% endfor %}
 
-
 <div class="row mt-5">
   <div class="d-flex justify-content-center">
       {% if paginator.previous_page %}
     <a class="primary-button m-2" href="{{ paginator.previous_page_path }}" class="previous">
-          Previous Page 
+          Prev
         </a>
         {% else %}
       <!--<span class="next ">Next</span>-->
     {% endif %}
 
-    <span class="m-2" style="padding: 12px 24px">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+   
 
      {% if paginator.next_page %}
-      <a class="primary-button m-2" href="{{ paginator.next_page_path }}" class="next">Next Page</a>
+      <a class="primary-button m-2" href="{{ paginator.next_page_path }}" class="next">Next</a>
     {% else %}
       <!--<span class="next ">Next</span>-->
     {% endif %}
