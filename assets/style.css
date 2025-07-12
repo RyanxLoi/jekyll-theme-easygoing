@@ -264,26 +264,3 @@ p {
     }
 
 }
-
-
-/*
-@media screen and (min-width: 769px) and (max-width: 992px){
-    .post-container{
-        width: 85%;
-        margin-top: 12px
-    }
-}
-
-@media screen and (min-width: 991px) and (max-width: 1200px){
-.post-container{
-        width: 60%;
-        margin-top: 12px
-    }
-}
-
-@media screen and (min-width: 1200px) {
-.post-container{
-        width: 55%;
-        margin-top: 12px
-    }
-}
